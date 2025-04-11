@@ -1,22 +1,30 @@
 name: SonarCloud Analysis
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    types: [ opened, synchronize, reopened ]
+    types: [opened, synchronize, reopened]
 
 jobs:
   analyze:
-    name: Analyze with SonarCloud
+    name: Analyze
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+          
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
         with:
-          args: |
-            -Dsonar.python.version=3.12
+          args: >
+            -Dsonar.organization=martyr-rrr
             -Dsonar.projectKey=martyr-rrr_python-project-49
+            -Dsonar.python.version=3.12
+            -Dsonar.sources=brain_games
