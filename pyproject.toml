@@ -1,3 +1,29 @@
-[tool.ruff]
-select = ["E", "F", "W", "I", "UP"]
-ignore = ["E501"]
+[project]
+name = "brain_games"  # Replace with your project's name
+version = "0.1.0"   # Or any initial version number
+description = "A collection of brain games." # Add description
+dependencies = [
+    "prompt>=0.4.1",
+]
+[project.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "D"]
+ignore = ["D"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["D104"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.5",
+]
+ 
