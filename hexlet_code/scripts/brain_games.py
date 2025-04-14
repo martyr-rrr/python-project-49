@@ -5,7 +5,7 @@ from hexlet_code.games import even
 
 
 def main():
-    """Run the main game flow."""
+    """Run the Even game by default."""
     run(even.DESCRIPTION, even.generate_round)
 
 
