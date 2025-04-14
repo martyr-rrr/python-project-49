@@ -1,5 +1,10 @@
 """Game engine module."""
 
+
+import sys
+from functools import partial
+
+
 def run(description, generate_round_func):
     """General game engine logic."""
     print('Welcome to the Brain Games!')
