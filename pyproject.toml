@@ -1,0 +1,28 @@
+[project]
+name = "hexlet-code"
+version = "0.1.0"   
+description = "Collection of math games"
+authors = [{name = "martyr-rrr", email = "novosadova.sofia007@mail.ru"}]
+readme = "README.md"
+[project.scripts]
+brain-games = "hexlet_code.scripts.brain_games:main"
+brain-even = "hexlet_code.scripts.brain_even:main"
+brain-calc = "hexlet_code.scripts.brain_calc:main"
+brain-gcd = "hexlet_code.scripts.brain_gcd:main"
+brain-progression = "hexlet_code.scripts.brain_progression:main"
+brain-prime = "hexlet_code.scripts.brain_prime:main"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "D"]
+ignore = ["D"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["D104"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.5",
+]
+ 
