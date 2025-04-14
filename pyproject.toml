@@ -1,11 +1,8 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"   
-description = "Math games collection"
-dependencies = [
-    "prompt>=0.4.1",
-]
-authors = [{name = "София", email = "novosadova.sofia007@mail.ru"}]
+description = "Collection of math games"
+authors = [{name = "martyr-rrr", email = "novosadova.sofia007@mail.ru"}]
 readme = "README.md"
 [project.scripts]
 brain-games = "hexlet_code.scripts.brain_games:main"

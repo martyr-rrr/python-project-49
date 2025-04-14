@@ -1,22 +1,22 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/martyr-rrr/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/martyr-rrr/python-project-49/actions)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=martyr-rrr_python-project-49&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=martyr-rrr_python-project-49)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=martyr-rrr_python-project-49&metric=bugs)](https://sonarcloud.io/summary/new_code?id=martyr-rrr_python-project-49)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=martyr-rrr_python-project-49&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=martyr-rrr_python-project-49)
-
-![Hexlet Maintainability Badge](https://api.codeclimate.com/v1/badges/...)
-![GitHub Actions](https://github.com/.../workflows/hexlet-check/badge.svg)
-
 # Brain Games
 
-Набор математических мини-игр...
+[![Actions Status](https://github.com/martyr-rrr/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/ваш-логин/python-project-49/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/martyr-rrr/maintainability)](https://codeclimate.com/github/ваш-логин/python-project-49/maintainability)
+
+Набор из 5 консольных математических игр. Каждая игра задает 3 вопроса. Для победы нужно правильно ответить на все вопросы. При ошибке игра завершается и предлагает попробовать снова.
+
+## Требования
+
+- Python 3.8+
+- pip (пакетный менеджер)
+- poetry (система управления зависимостями)
 
 ## Установка
 
 ```bash
-uv pip install git+https://github.com/martyr-rrr/python-project-49.git
-```
-
+git clone https://github.com/ваш-логин/python-project-49.git
+cd python-project-49
+make install
 ## Игры
 
 ### 1. Проверка на чётность
