@@ -1,6 +1,6 @@
 """GCD game script."""
-from brain_games.engine import run
-from brain_games.games.gcd import DESCRIPTION, generate_round
+from hexlet_code.engine import run
+from hexlet_code.games.gcd import DESCRIPTION, generate_round
 
 
 def main():

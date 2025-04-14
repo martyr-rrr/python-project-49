@@ -1,6 +1,6 @@
 """Calculator game script."""
-from brain_games.engine import run
-from brain_games.games.calc import DESCRIPTION, generate_round
+from hexlet_code.engine import run
+from hexlet_code.games.calc import DESCRIPTION, generate_round
 
 
 def main():

@@ -2,7 +2,9 @@
 
 from random import randint
 
+
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def is_prime(number):
     """Check if number is prime."""
@@ -12,6 +14,7 @@ def is_prime(number):
         if number % divisor == 0:
             return False
     return True
+
 
 def generate_round():
     """Generate a round of prime game."""

@@ -1,17 +1,19 @@
 [project]
-name = "brain_games"  # Replace with your project's name
-version = "0.1.0"   # Or any initial version number
-description = "A collection of brain games." # Add description
+name = "hexlet-code"
+version = "0.1.0"   
+description = "Math games collection"
 dependencies = [
     "prompt>=0.4.1",
 ]
+authors = [{name = "София", email = "novosadova.sofia007@mail.ru"}]
+readme = "README.md"
 [project.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.scripts.brain_even:main"
-brain-calc = "brain_games.scripts.brain_calc:main"
-brain-gcd = "brain_games.scripts.brain_gcd:main"
-brain-progression = "brain_games.scripts.brain_progression:main"
-brain-prime = "brain_games.scripts.brain_prime:main"
+brain-games = "hexlet_code.scripts.brain_games:main"
+brain-even = "hexlet_code.scripts.brain_even:main"
+brain-calc = "hexlet_code.scripts.brain_calc:main"
+brain-gcd = "hexlet_code.scripts.brain_gcd:main"
+brain-progression = "hexlet_code.scripts.brain_progression:main"
+brain-prime = "hexlet_code.scripts.brain_prime:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
