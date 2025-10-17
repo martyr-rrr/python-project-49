@@ -5,7 +5,9 @@ from brain_games.games import prime
 
 def main():
     """Main function of the Brain Prime game."""
-    description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    description = (
+        'Answer "yes" if given number is prime. Otherwise answer "no".'
+    )
     run_game(prime, description)
 
 

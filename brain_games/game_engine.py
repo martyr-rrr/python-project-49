@@ -5,8 +5,8 @@ import prompt
 def run_game(game_module, description):
     """Run game engine with specific game logic."""
     print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
 
     print(description)
 
@@ -14,16 +14,18 @@ def run_game(game_module, description):
 
     for _ in range(rounds_count):
         question, correct_answer = game_module.generate_round()
-        print(f"Question: {question}")
-        user_answer = input("Your answer: ").strip()
+        print(f'Question: {question}')
+        user_answer = input('Your answer: ').strip()
 
         if user_answer == correct_answer:
-            print("Correct!")
+            print('Correct!')
         else:
-            print(
-                f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
+            error_msg = (
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'."
             )
+            print(error_msg)
             print(f"Let's try again, {name}!")
             return
 
-    print(f"Congratulations, {name}!")
+    print(f'Congratulations, {name}!')
