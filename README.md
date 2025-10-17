@@ -26,3 +26,12 @@ brain-calc
 ```
 
 [![Brain Calc Demo](https://asciinema.org/a/kAZ3yu1ReAljc0QOhzN2pSQvx.png)](https://asciinema.org/a/kAZ3yu1ReAljc0QOhzN2pSQvx)
+
+### Brain GCD
+Find the greatest common divisor of two numbers:
+
+```bash
+brain-gcd
+```
+
+[![Brain GCD Demo](https://asciinema.org/a/B2ZZMX6DpzluwaHLjOt9RxGz3.png)](https://asciinema.org/a/B2ZZMX6DpzluwaHLjOt9RxGz3)
