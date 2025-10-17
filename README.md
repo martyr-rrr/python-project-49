@@ -35,3 +35,12 @@ brain-gcd
 ```
 
 [![Brain GCD Demo](https://asciinema.org/a/B2ZZMX6DpzluwaHLjOt9RxGz3.png)](https://asciinema.org/a/B2ZZMX6DpzluwaHLjOt9RxGz3)
+
+### Brain Progression
+Find the missing number in the arithmetic progression:
+
+```bash
+brain-progression
+```
+
+[![Brain Progression Demo](https://asciinema.org/a/rg5S8L1zWcN8UpdE6FPxzbPPc.png)](https://asciinema.org/a/rg5S8L1zWcN8UpdE6FPxzbPPc)
