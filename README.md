@@ -44,3 +44,12 @@ brain-progression
 ```
 
 [![Brain Progression Demo](https://asciinema.org/a/rg5S8L1zWcN8UpdE6FPxzbPPc.png)](https://asciinema.org/a/rg5S8L1zWcN8UpdE6FPxzbPPc)
+
+### Brain Prime
+Check if the number is prime:
+
+```bash
+brain-prime
+```
+
+[![Brain Prime Demo](https://asciinema.org/a/Gnys9xOnvqvxr0vWH6w2OqriI.png)](https://asciinema.org/a/Gnys9xOnvqvxr0vWH6w2OqriI)
