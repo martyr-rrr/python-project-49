@@ -14,10 +14,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: SonarQube Scan
-        run: |
-          /opt/hostedtoolcache/sonar-scanner-cli/7.2.0.5079/linux-x64/bin/sonar-scanner \
-            -Dsonar.projectKey=martyr-rrr_python-project-49 \
-            -Dsonar.organization=sofi2580 \
-            -Dsonar.projectBaseDir=.
+        uses: SonarSource/sonarqube-scan-action@v6
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
